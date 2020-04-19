@@ -1,0 +1,12 @@
+
+Ksquid:S1172"*Remove this unused method parameter "key".(Ôˆ·ôıÿÿÿÿ8ÊÓ’å–.
+Fsquid:S1172"*Remove this unused method parameter "key".(ö›õü8ÊÓ’å–.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(çó“ûÿÿÿÿ8­çûä–.
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ö›õü8ÊÓ’å–.
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ôˆ·ôıÿÿÿÿ8ÊÓ’å–.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(Šúüÿÿÿÿ8¬±ùä–.
+Csquid:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8Ğ®õä–.
+lsquid:S2095"QUse try-with-resources or close this "ServerSocketChannel" in a "finally" clause.(„Ìõa8ïéää–.
+]squid:UselessImportCheck"/Remove this unused import 'java.sql.SQLOutput'.(ê¤òÃùÿÿÿÿ8¬±ùä–.
