@@ -8,6 +8,9 @@ import java.util.PriorityQueue;
 
 /**
  * @author wangxueqing
+ * 求第K小问题--通过max heap来解决，堆用PriorityQueue实现大堆，当size > k 时，
+ * 将最大堆顶部元素 poll()出来，最大堆始终维护k个最大元素，直到所有元素都枚举完，
+ * 最后堆里面的维护的就是最小的k个元素，此时poll出的便是第k小元素
  */
 public class FindKthElement {
 

@@ -31,13 +31,18 @@ public class LRUCache {
   }
 
   public static void main(String[] args) {
-    LRUCache cache = new LRUCache(2);
-    cache.set(2, 1);
+    LRUCache cache = new LRUCache( 2);
+
     cache.set(1, 1);
-    System.out.println(cache.get(2));
-    cache.set(4, 1);
+    cache.set(2, 2);
     System.out.println(cache.get(1));
+    cache.set(3, 3);
     System.out.println(cache.get(2));
+    cache.set(4, 4);
+    System.out.println(cache.get(1));
+    System.out.println(cache.get(3));
+    System.out.println(cache.get(4));
+
   }
 
 
@@ -60,6 +65,7 @@ public class LRUCache {
 
     // option 2
     if(size < capacity){
+      // key 2: 这点很容易忘记，size一定要++，不然出来的结果就是错的
       ++size;
       Node curt = new Node(key, value);
       tail.next = curt;
@@ -89,6 +95,7 @@ public class LRUCache {
     Node prev = keyToPrev.get(key);
     Node curt = prev.next;
 
+    // key 1: 这个退出条件很重要 不加就会导致出现null point exception.
     if(curt == tail) {
       return;
     }

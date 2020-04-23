@@ -14,3 +14,15 @@ R
 "src/com/example/nio/NIOServer.java,a/9/a9d8516b76b29b598cb1a44d7ce256e85285911b
 b
 2src/com/example/findKthElement/FindKthElement.java,3/9/39cb2981b65e54ad677dfb6b2fdf8d990e10192a
+S
+#src/com/example/sort/QuickSort.java,1/0/10a9659c71d2460e1476d15581da3e163bf4c5ae
+U
+%src/com/example/sort/QuickSelect.java,c/1/c12bde128323fc2fb7817fd5eba6c905e11d7bda
+S
+#src/com/example/cache/LRUCache.java,3/5/35637cd59755fe57ac9bcfc1baf4bb0ded29f503
+h
+8src/com/example/binarySearch/DuplicatedElementArray.java,6/8/6887720c3a192262df2b38309962b83b178d2b96
+X
+(src/com/example/concurrent/DeadLock.java,e/9/e965928b44c256054d4570965ad8baf55957e8ac
+U
+%src/com/example/design/Singleton.java,c/6/c658f270ab8fb8b2aa62b5674f9130ced62fe991
