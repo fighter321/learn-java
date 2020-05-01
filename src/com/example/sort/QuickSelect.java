@@ -9,7 +9,7 @@ public class QuickSelect {
 
   public static void main(String[] args) {
     int[] nums = new int[]{2,1,4,3,5};
-    int res = quickSelect(nums, 0, nums.length-1, 3);
+    int res = quickSelect(nums, 0, nums.length-1, nums.length-3);
     System.out.println(res);
   }
 
@@ -39,10 +39,10 @@ public class QuickSelect {
     }
 
     // now left > right, so start <= right < left <= end.
-    if(k < right){
+    if(start <= right && k <= right){
       return quickSelect(nums, start, right, k);
     }
-    if(k > left){
+    if(left <= end && k >= left){
       return quickSelect(nums, left, end, k);
     }
     return nums[k];
