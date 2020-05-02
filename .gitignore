@@ -2,3 +2,7 @@
 *.class
 out/
 *.idea
+jmeter.log
+jmeter/*
+res.out
+.idea/*

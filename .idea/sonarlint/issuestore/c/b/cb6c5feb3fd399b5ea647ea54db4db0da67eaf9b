@@ -1,26 +1,26 @@
 
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ã½ƒë8ÿ½Ù‡.
 Msquid:S1444",Make this "public static UNSAFE" field final(±ÿ Óúÿÿÿÿ8ÆË¹Ø‡.
-Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(éª‚€8ÆË¹Ø‡.
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(á——ûÿÿÿÿ8ƒûþØ‡.
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(ò¸Þüÿÿÿÿ8øÿØ‡.
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬ç¤†8ÿ½Ù‡.
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(šÑ‰­ýÿÿÿÿ8ÐÊÿØ‡.
-Jsquid:S1444")Make this "public static cas" field final(«ñ™„þÿÿÿÿ8÷¦·Ø‡.
 squid:S1845"^Rename method "cas" to prevent any misunderstanding/clash with field "cas" defined on line 19.(Á’ˆÌýÿÿÿÿ8£ÙÉØ‡.
 Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(²»”Êüÿÿÿÿ8þÅ€Ù‡.
-ysquid:S3008"XRename this field "_synchronized" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬…ûƒþÿÿÿÿ8–´Ø‡.
+squid:S106"9Replace this use of System.out or System.err by a logger.(ò¸Þüÿÿÿÿ8øÿØ‡.
+‡"squid:ClassVariableVisibilityCheck"OMake cas a static final constant or non-public and provide accessors if needed.(«ñ™„þÿÿÿÿ8÷¦·Ø‡.
 fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ï­ãR8ÐŸùØ‡.
-rsquid:S3008"QRename this field "UNSAFE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÿ Óúÿÿÿÿ8ÆË¹Ø‡.
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸³Ûÿÿÿÿÿ8Ò”‚Ù‡.
+Š"squid:ClassVariableVisibilityCheck"RMake UNSAFE a static final constant or non-public and provide accessors if needed.(±ÿ Óúÿÿÿÿ8ÆË¹Ø‡.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬ç¤†8ÿ½Ù‡.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(²»”Êüÿÿÿÿ8þÅ€Ù‡.
+Jsquid:S1444")Make this "public static cas" field final(«ñ™„þÿÿÿÿ8÷¦·Ø‡.
+psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Âûö²
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(šÑ‰­ýÿÿÿÿ8ÐÊÿØ‡.
 Y
 squid:S106"9Replace this use of System.out or System.err by a logger.(‡ä½Åúÿÿÿÿ8þ³þØ‡.
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(á——ûÿÿÿÿ8ƒûþØ‡.
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ã½ƒë8ÿ½Ù‡.
+lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¸³Ûÿÿÿÿÿ8Ò”‚Ù‡.
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8™‚ÇØ‡.
-Š"squid:ClassVariableVisibilityCheck"RMake UNSAFE a static final constant or non-public and provide accessors if needed.(±ÿ Óúÿÿÿÿ8ÆË¹Ø‡.
-psquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Âûö²
-‡"squid:ClassVariableVisibilityCheck"OMake cas a static final constant or non-public and provide accessors if needed.(«ñ™„þÿÿÿÿ8÷¦·Ø‡.
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Úì¨Þ8ÿ½Ù‡.
+ysquid:S3008"XRename this field "_synchronized" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬…ûƒþÿÿÿÿ8–´Ø‡.
+Qsquid:S1191"5Use classes from the Java API instead of Sun classes.(éª‚€8ÆË¹Ø‡.
+rsquid:S3008"QRename this field "UNSAFE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±ÿ Óúÿÿÿÿ8ÆË¹Ø‡.
