@@ -1,6 +1,6 @@
 package com.example.connection.pool;
 
-import com.example.connection.pool.com.example.connection.ConnectionDriver;
+import com.example.connection.pool.driver.ConnectionDriver;
 import java.sql.Connection;
 import java.util.LinkedList;
 

@@ -5,4 +5,5 @@ out/
 jmeter.log
 jmeter/*
 res.out
-.idea/*
+.idea/
+learn-java.iml

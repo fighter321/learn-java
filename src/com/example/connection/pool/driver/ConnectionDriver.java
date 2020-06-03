@@ -1,4 +1,4 @@
-package com.example.connection.pool.com.example.connection;
+package com.example.connection.pool.driver;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

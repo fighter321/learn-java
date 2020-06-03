@@ -1,8 +1,6 @@
 package com.example.linkedlist;
 
 
-import java.util.List;
-
 /**
  * @author wangxueqing
  * 删除链表的倒数第N个节点，并返回新的链表头
@@ -30,7 +28,7 @@ public class RemoveNthFromEndOfList {
     }
   }
 
-  private static ListNode remove(ListNode head, int n){
+  public static ListNode remove(ListNode head, int n){
     if(n <= 0 || head == null) {
       return null;
     }
@@ -61,10 +59,3 @@ public class RemoveNthFromEndOfList {
   }
 }
 
-class ListNode {
-  int val;
-  ListNode next;
-  public ListNode(int val){
-    this.val = val;
-  }
-}
