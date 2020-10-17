@@ -1,4 +1,4 @@
-package com.example.linkedlist;
+package com.example.collection.list.linkedlist;
 
 /**
  * @author wangxueqing
