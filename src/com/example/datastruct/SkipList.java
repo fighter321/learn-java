@@ -49,6 +49,7 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
     skipList.remove(0);
     assert skipList.size() == 0;
     assert skipList.empty();
+    System.out.println("success finished skiplist tests");
   }
 
   public SkipList() {
@@ -80,42 +81,47 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
 
     Node<K, V> newNode = new Node<>(key, value, node.getLevel());
     horizontalInsert(node, newNode);
-
     int currentLevel = node.getLevel();
     int headLevel = head.getLevel();
     while(isBuildLevel()){
+      // 升级head
       if(currentLevel >= headLevel){
         Node<K, V> newHead = new Node<>(null, null, headLevel+1);
         verticalLink(newHead, head);
         head = newHead;
-        headLevel = newHead.getLevel();
+        headLevel = head.getLevel();
       }
 
+      // 升级node
       while(node.getUp() == null){
         node = node.getPrev();
       }
       node = node.getUp();
-
+      // 链接上一层 node
       Node<K, V> tmp = new Node<>(key, value, node.getLevel());
       horizontalInsert(node, tmp);
       verticalLink(tmp, newNode);
       newNode = tmp;
-      ++currentLevel;
+      currentLevel++;
     }
-    ++size;
+    size++;
   }
 
   public void remove(K key){
     checkKeyValidity(key);
     Node<K, V> node = findNode(key);
-    if(node == null || node.getKey().compareTo(key) != 0){
+    if(node.getKey() == null || node.getKey().compareTo(key)!= 0){
       throw new NoSuchElementException("The key is not exist");
     }
 
+    // move to bottom
+    while (node.getDown() != null){
+      node = node.getDown();
+    }
+
     // remove node by down-top
-    Node<K, V> prev = null;
-    Node<K, V> next = null;
-    for(; node !=null; node.getUp()){
+    Node<K, V> prev, next;
+    for(; node != null; node = node.getUp()){
       prev = node.getPrev();
       next = node.getNext();
       if(prev != null){
@@ -125,13 +131,12 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
         next.setPrev(prev);
       }
     }
-
     // adjust head
     while(head.getNext() == null && head.getDown() != null){
       head = head.getDown();
       head.setUp(null);
     }
-    --size;
+    size--;
   }
 
   public boolean contains(K key){
@@ -156,8 +161,8 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
   }
 
   private void horizontalInsert(Node<K, V> x, Node<K, V> y){
-    y.setPrev(x);
     y.setNext(x.getNext());
+    y.setPrev(x);
     if(x.getNext() != null){
       x.getNext().setPrev(y);
     }
@@ -165,10 +170,11 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
   }
 
   protected Node<K, V> findNode(K key){
+    checkKeyValidity(key);
     Node<K, V> node = head;
-    Node<K, V> next = null;
-    Node<K, V> down = null;
-    K nodeKey = null;
+    Node<K, V> next;
+    Node<K, V> down;
+    K nodeKey;
 
     while(true){
       next = node.getNext();
@@ -178,10 +184,9 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
       }
 
       nodeKey = node.getKey();
-      if(nodeKey != null && nodeKey.compareTo(key)==0){
+      if(nodeKey != null && nodeKey.compareTo(key) == 0){
         break;
       }
-
       down = node.getDown();
       if(down != null){
         node = down;
@@ -189,9 +194,7 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
         break;
       }
     }
-
     return node;
-
   }
 
   protected boolean lessThanOrEqual(K a, K b) {
@@ -200,7 +203,7 @@ public class SkipList<K extends Comparable<K>, V> implements Iterable<K> {
 
   private void checkKeyValidity(K key) {
     if(key == null){
-      throw new IllegalArgumentException("key must not be null");
+      throw new IllegalArgumentException("The key must not be null");
     }
   }
 
